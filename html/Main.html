@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="../libraries/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../libraries/jquery-ui-1.10.1.custom/index.html"></script>
+<script type="text/javascript" src="../libraries/flot-flot-f0e78fc/jquery.flot.js"></script>
+
 <title>Webpatenten - Authors: Bas Brouwer (3966747), Joris Bolwerk (3845346) - Webtechnologie Universiteit Utrecht</title>
+
 <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+
+<script type="text/javascript" src="../javascript/functionsMainPage.js"></script>
+
+<meta charset="UTF-8">
 </head>
-<body>
+<body onload="load()" onresize="adjustSizes()">
 <a id="Top" href="#Bottom">go to bottom of the page</a>
 <br> 
 
+<!-- <a href="register.html">Register</a> -->
 
-
-<a href="register.html">Register</a>
+<header>
 <h1>Webpatenten</h1>
+</header>
+
+<nav id="navigationMenu"> <!--onhover="javascript:highLight('applyButton');""-->
+<p id="homeButton" class="navigate" onmouseover="highLight('homeButton', '#FFFFFF');" onmouseout="unHighLight('homeButton');" onclick="showSubPage('infoSpace', 'homeButton', 'yellow', 'Home');">Home</p>
+<p id="applyButton" class="navigate" onmouseover="highLight('applyButton', '#FFFFFF');" onmouseout="unHighLight('applyButton');" onclick="showSubPage('infoSpace',  'applyButton', 'yellow',  'Applying');">Toepassing</p>
+<p id="countryButton" class="navigate" onmouseover="highLight('countryButton', '#FFFFFF');" onmouseout="unHighLight('countryButton');" onclick="showSubPage('infoSpace', 'countryButton', 'yellow', 'Countries');">Landen</p>
+<p id="caseButton" class="navigate" onmouseover="highLight('caseButton', '#FFFFFF');" onmouseout="unHighLight('caseButton');" onclick="showSubPage('infoSpace', 'caseButton',  'yellow',  'Cases');">Rechtszaken</p>
+<p id="openSourceButton" class="navigate" onmouseover="highLight('openSourceButton', '#FFFFFF');" onmouseout="unHighLight('openSourceButton');" onclick="showSubPage('infoSpace',  'openSourceButton',  'yellow', 'OpenSource');">Open Source</p>
+</nav>
 <img id="patentImg1" src="../images/scale.png" alt="loading image"> 
 
-<div id="copyRights">
-<h2>Copyrights</h2>
-<img id="patentImg2" ALIGN=RIGHT src="../images/softwarePatents.JPG" alt="loading image">
-<text> een leuk verhaaltje over copyrights<br>volgende regel<br>en nog een</text>
-</div>
+<p id="infoSpace">
+hallo!
+</p>
 
-<div id="links">
+<p id="links">
 <p>links:</p> 
 <a href="http://en.wikipedia.org/wiki/Software_patent" target="_blank">wikipedia: software patenten</a>
 <br>
-</div>
+</p>
 
 
 
 <a id="Bottom" href="#Top">go back to the top of the page</a> 
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" />
+    </a>
+</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valide CSS!" />
+</a>
+</p>
 </body>
 </html>
